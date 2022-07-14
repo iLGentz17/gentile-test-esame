@@ -11,3 +11,5 @@ hooks:
   ApplicationStop: 
     - localtion: pipeline_script/ApplicationStop.sh
       runas: root
+
+#canedio
