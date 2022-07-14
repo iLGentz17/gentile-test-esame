@@ -43,8 +43,8 @@ app.get('/', (req, res) => {
             <input type="number" name="anum">
           </div><br>
           <button>Acquisci il testo</button>&nbsp;
-          <button><a style='color:#FFFFFF' href=http://localhost:8080/find>CERCA</a></button>&nbsp;
-          <button><a style='color:#FFFFFF' href=http://localhost:8080/list>VISULIZZA TUTTI</a></button>
+          <button><a style='color:#FFFFFF' href=/find>CERCA</a></button>&nbsp;
+          <button><a style='color:#FFFFFF' href=/list>VISULIZZA TUTTI</a></button>
         </form>
       </body>
     </html>
@@ -96,8 +96,8 @@ app.get("/list", async(req, res) => {
       <h2>PROVA ITS</h2>
       <h3>Valori inseriti</h3>
        ${myresult}
-       <button><a style='color:#FFFFFF' href=http://localhost:8080>HOME</a></button>&nbsp;
-       <button><a style='color:#FFFFFF' href=http://localhost:8080/find>CERCA</a></button>
+       <button><a style='color:#FFFFFF' href=/>HOME</a></button>&nbsp;
+       <button><a style='color:#FFFFFF' href=/find>CERCA</a></button>
       
     </section>
       </body>
@@ -123,8 +123,8 @@ app.get("/find", async(req, res) => {
           <input type="text" name="astring">
         </div>
         <button>Cerca</button>&nbsp;
-        <button><a style='color:#FFFFFF' href=http://localhost:8080>HOME</a></button>&nbsp;
-        <button><a style='color:#FFFFFF' href=http://localhost:8080/list>VISULIZZA TUTTI</a></button>
+        <button><a style='color:#FFFFFF' href=>HOME</a></button>&nbsp;
+        <button><a style='color:#FFFFFF' href=/list>VISULIZZA TUTTI</a></button>
       </form>
     </body>
   </html>
@@ -156,9 +156,9 @@ app.post('/mysearch', async(req, res) => {
       <h2>PROVA ITS</h2>
       <h3>RISULTATO DELLA RICERCA per ${enteredText}</h3>
        ${myresult}
-      <button><a style='color:#FFFFFF' href=http://localhost:8080/>HOME</a></button>&nbsp;
-      <button><a style='color:#FFFFFF' href=http://localhost:8080/find>FAI UN'ALTRA RICERCA</a></button>
-      <button><a style='color:#FFFFFF' href=http://localhost:8080/list>VISULIZZA TUTTI</a></button>
+      <button><a style='color:#FFFFFF' href=/>HOME</a></button>&nbsp;
+      <button><a style='color:#FFFFFF' href=/find>FAI UN'ALTRA RICERCA</a></button>
+      <button><a style='color:#FFFFFF' href=/list>VISULIZZA TUTTI</a></button>
 
     </section>
       </body>
