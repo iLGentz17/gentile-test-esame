@@ -7,9 +7,9 @@ file_exists_behavior: OVERWRITE
 hooks:
   ApplicationStart:
     - location: pipeline_script/ApplicationStart.sh
-      runas: linux
+      runas: ubuntu
   ApplicationStop: 
     - localtion: pipeline_script/ApplicationStop.sh
-      runas: linux
+      runas: ubuntu
 
 #canedio
