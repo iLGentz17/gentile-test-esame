@@ -5,8 +5,8 @@ const { stringify } = require('querystring');
 const app = express();
 
 const pool = new Pool({
-    user: "itsuser",
-    host: "database",
+    user: "postgres",
+    host: "gentile-test-esame.c9nj1x2p6gk5.eu-west-1.rds.amazonaws.com",
     database: "itsdb2",
     password: "itsuser01",
     port: "5432"
